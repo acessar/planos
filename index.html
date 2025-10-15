@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Planos | Dezain Code Style</title>
+
+    <style>
+        /* ====== ESTILO BASE ====== */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f0f1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 0;
+        }
+
+        h2, h3 {
+            margin: 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #667eea, #00bfa5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-subtitle {
+            color: #b0b0c0;
+            font-size: 1.1rem;
+        }
+
+        /* ====== TABELAS ====== */
+        .tabela-servico {
+            margin-bottom: 4rem;
+        }
+
+        .tabela-servico h3 {
+            font-size: 1.8rem;
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+        .tabela-servico p {
+            color: #b0b0c0;
+            margin-bottom: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+            background: #1b1b2e;
+            border: 1px solid #2c2c44;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 1rem 1.2rem;
+            text-align: left;
+        }
+
+        th {
+            background: linear-gradient(90deg, #2c2c44, #1b1b2e);
+            color: #00bfa5;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #161627;
+        }
+
+        tr:hover {
+            background-color: #23233a;
+            transition: background 0.3s ease;
+        }
+
+        td {
+            color: #e0e0e0;
+        }
+
+        .valor {
+            color: #00bfa5;
+            font-weight: 600;
+        }
+
+        /* ====== RODAPÉ / DIVISÃO ====== */
+        hr {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            margin: 4rem 0;
+        }
+
+        /* ====== RESPONSIVIDADE ====== */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            table {
+                font-size: 0.9rem;
+            }
+            th, td {
+                padding: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section id="planos">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title">Tabela de Planos e Valores</h2>
+                <p class="section-subtitle">Serviços de Alto Padrão</p>
+            </div>
+
+            <!-- ====== 1️⃣ Desenvolvimento de Sites ====== -->
+            <div class="tabela-servico">
+                <h3>1️⃣ Desenvolvimento de Sites</h3>
+                <p>Criação de sites modernos, rápidos e otimizados para conversão.</p>
+                <table>
+                    <tr>
+                        <th>Tipo de Site</th>
+                        <th>Descrição</th>
+                        <th>Valor Justo (R$)</th>
+                    </tr>
+                    <tr>
+                        <td>Site Institucional Premium</td>
+                        <td>Design exclusivo, até 6 páginas, SEO inicial, integração com WhatsApp e redes sociais</td>
+                        <td class="valor">R$ 2.500 – R$ 3.500</td>
+                    </tr>
+                    <tr>
+                        <td>Cartão de Visitas Digital Interativo</td>
+                        <td>Página única animada e responsiva, ideal para profissionais e pequenas marcas</td>
+                        <td class="valor">R$ 800 – R$ 1.200</td>
+                    </tr>
+                    <tr>
+                        <td>E-commerce Completo</td>
+                        <td>Loja virtual profissional (até 100 produtos), integração com gateways de pagamento e gestão de pedidos</td>
+                        <td class="valor">R$ 4.500 – R$ 7.000</td>
+                    </tr>
+                    <tr>
+                        <td>Blog Corporativo Otimizado</td>
+                        <td>Layout sob medida, integração com SEO e área administrativa personalizada</td>
+                        <td class="valor">R$ 1.800 – R$ 2.800</td>
+                    </tr>
+                    <tr>
+                        <td>Venda de Ingressos Online</td>
+                        <td>Sistema de eventos e controle de lotes, QR Code e relatórios de vendas</td>
+                        <td class="valor">R$ 3.500 – R$ 6.000</td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr>
+
+            <!-- ====== 2️⃣ Chatbot Inteligente ====== -->
+            <div class="tabela-servico">
+                <h3>2️⃣ Chatbot Inteligente</h3>
+                <p>Atendimento automatizado com inteligência artificial, disponível 24h/dia.</p>
+                <table>
+                    <tr>
+                        <th>Plano</th>
+                        <th>Recursos</th>
+                        <th>Valor Justo (R$)</th>
+                    </tr>
+                    <tr>
+                        <td>Essencial</td>
+                        <td>Chatbot para dúvidas frequentes + integração básica no WhatsApp</td>
+                        <td class="valor">R$ 1.200 – R$ 1.800</td>
+                    </tr>
+                    <tr>
+                        <td>Profissional</td>
+                        <td>Fluxos personalizados, captação de leads e integração com CRM</td>
+                        <td class="valor">R$ 2.000 – R$ 3.500</td>
+                    </tr>
+                    <tr>
+                        <td>Enterprise (IA Avançada)</td>
+                        <td>Chatbot com IA (como GPT integrado), automações completas e suporte premium</td>
+                        <td class="valor">R$ 5.000 – R$ 8.000</td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr>
+
+            <!-- ====== 3️⃣ Personalização Sazonal ====== -->
+            <div class="tabela-servico">
+                <h3>3️⃣ Personalização Sazonal</h3>
+                <p>Transforme seu site em campanhas temáticas (Natal, Black Friday, etc.).</p>
+                <table>
+                    <tr>
+                        <th>Tipo de Personalização</th>
+                        <th>Descrição</th>
+                        <th>Valor Justo (R$)</th>
+                    </tr>
+                    <tr>
+                        <td>Básica</td>
+                        <td>Troca de cores, banners e textos</td>
+                        <td class="valor">R$ 400 – R$ 600</td>
+                    </tr>
+                    <tr>
+                        <td>Intermediária</td>
+                        <td>Atualização de layout + copywriting otimizado</td>
+                        <td class="valor">R$ 800 – R$ 1.200</td>
+                    </tr>
+                    <tr>
+                        <td>Campanha Completa</td>
+                        <td>Design temático completo, banners animados, landing page e automação de campanha</td>
+                        <td class="valor">R$ 1.800 – R$ 3.000</td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr>
+
+            <!-- ====== 4️⃣ Manutenção e Suporte Técnico ====== -->
+            <div class="tabela-servico">
+                <h3>4️⃣ Manutenção e Suporte Técnico</h3>
+                <p>Garantia de desempenho e segurança contínua para seu site.</p>
+                <table>
+                    <tr>
+                        <th>Plano</th>
+                        <th>Frequência</th>
+                        <th>Inclui</th>
+                        <th>Valor Mensal (R$)</th>
+                    </tr>
+                    <tr>
+                        <td>Básico</td>
+                        <td>1x/mês</td>
+                        <td>Atualizações de segurança e pequenos ajustes</td>
+                        <td class="valor">R$ 250 – R$ 400/mês</td>
+                    </tr>
+                    <tr>
+                        <td>Profissional</td>
+                        <td>2x/mês</td>
+                        <td>Revisões técnicas, otimização de SEO, suporte de conteúdo</td>
+                        <td class="valor">R$ 600 – R$ 900/mês</td>
+                    </tr>
+                    <tr>
+                        <td>VIP</td>
+                        <td>Ilimitado</td>
+                        <td>Suporte prioritário, monitoramento 24h, relatórios mensais</td>
+                        <td class="valor">R$ 1.200 – R$ 2.000/mês</td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr>
+
+            <!-- ====== 💼 Pacotes Combinados ====== -->
+            <div class="tabela-servico">
+                <h3>💼 Pacotes Combinados (para aumentar ticket médio)</h3>
+                <table>
+                    <tr>
+                        <th>Pacote</th>
+                        <th>Inclui</th>
+                        <th>Valor Justo (R$)</th>
+                    </tr>
+                    <tr>
+                        <td>Presença Digital Completa</td>
+                        <td>Site Institucional + Chatbot Profissional + 3 meses de manutenção</td>
+                        <td class="valor">R$ 6.000 – R$ 8.500</td>
+                    </tr>
+                    <tr>
+                        <td>Loja + Automação de Atendimento</td>
+                        <td>E-commerce completo + Chatbot IA + Campanha Sazonal</td>
+                        <td class="valor">R$ 9.000 – R$ 12.000</td>
+                    </tr>
+                    <tr>
+                        <td>Plano Premium Anual</td>
+                        <td>Site + Suporte VIP + 4 campanhas sazonais</td>
+                        <td class="valor">R$ 12.000 – R$ 18.000 (anual)</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
