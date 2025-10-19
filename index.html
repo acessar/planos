@@ -52,12 +52,13 @@
         .tabela-servico h3 {
             font-size: 1.8rem;
             color: #ffffff;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
 
         .tabela-servico p {
             color: #b0b0c0;
-            margin-bottom: 1.5rem;
+            margin: 0.5rem 0 1.5rem 0;
+            font-size: 0.95rem;
         }
 
         table {
@@ -79,6 +80,7 @@
             background: linear-gradient(90deg, #2c2c44, #1b1b2e);
             color: #00bfa5;
             font-weight: 600;
+            font-size: 0.9rem;
         }
 
         tr:nth-child(even) {
@@ -92,10 +94,16 @@
 
         td {
             color: #e0e0e0;
+            font-size: 0.95rem;
         }
 
         .valor {
             color: #00bfa5;
+            font-weight: 600;
+        }
+
+        .destaque {
+            color: #667eea;
             font-weight: 600;
         }
 
@@ -107,16 +115,26 @@
             margin: 4rem 0;
         }
 
+        .nota {
+            background: #161627;
+            border-left: 3px solid #667eea;
+            padding: 1.2rem;
+            margin-top: 1rem;
+            border-radius: 4px;
+            color: #b0b0c0;
+            font-size: 0.9rem;
+        }
+
         /* ====== RESPONSIVIDADE ====== */
         @media (max-width: 768px) {
             .section-title {
                 font-size: 2rem;
             }
             table {
-                font-size: 0.9rem;
+                font-size: 0.85rem;
             }
             th, td {
-                padding: 0.8rem;
+                padding: 0.7rem;
             }
         }
     </style>
@@ -127,167 +145,240 @@
         <div class="container">
 
             <div class="section-header">
-                <h2 class="section-title">Tabela de Planos e Valores</h2>
-                <p class="section-subtitle">Serviços de Alto Padrão</p>
+                <h2 class="section-title">Tabela de Preços</h2>
+                <p class="section-subtitle">Modelo de Receita Recorrente - Entrada Baixa + Mensalidade Alta</p>
             </div>
 
-            <!-- ====== 1️⃣ Desenvolvimento de Sites ====== -->
+            <!-- ====== 1️⃣ INVESTIMENTO INICIAL: SITES ====== -->
             <div class="tabela-servico">
-                <h3>1️⃣ Desenvolvimento de Sites</h3>
-                <p>Criação de sites modernos, rápidos e otimizados para conversão.</p>
+                <h3>1️⃣ Investimento Inicial: Desenvolvimento de Sites</h3>
+                <p>Preço único cobrado apenas uma vez no início do projeto.</p>
                 <table>
                     <tr>
                         <th>Tipo de Site</th>
                         <th>Descrição</th>
-                        <th>Valor Justo (R$)</th>
+                        <th>Preço (R$)</th>
+                    </tr>
+                    <tr>
+                        <td>Landing Page</td>
+                        <td>Página única otimizada para conversão, ideal para campanhas</td>
+                        <td class="valor">R$ 445</td>
+                    </tr>
+                    <tr>
+                        <td>Cartão de Visitas Digital</td>
+                        <td>Página animada e responsiva para profissionais</td>
+                        <td class="valor">R$ 335,75</td>
                     </tr>
                     <tr>
                         <td>Site Institucional Premium</td>
-                        <td>Design exclusivo, até 6 páginas, SEO inicial, integração com WhatsApp e redes sociais</td>
-                        <td class="valor">R$ 2.500 – R$ 3.500</td>
+                        <td>Design exclusivo, até 6 páginas, SEO inicial, WhatsApp e redes sociais</td>
+                        <td class="valor">R$ 775</td>
                     </tr>
                     <tr>
-                        <td>Cartão de Visitas Digital Interativo</td>
-                        <td>Página única animada e responsiva, ideal para profissionais e pequenas marcas</td>
-                        <td class="valor">R$ 800 – R$ 1.200</td>
-                    </tr>
-                    <tr>
-                        <td>E-commerce Completo</td>
-                        <td>Loja virtual profissional (até 100 produtos), integração com gateways de pagamento e gestão de pedidos</td>
-                        <td class="valor">R$ 4.500 – R$ 7.000</td>
-                    </tr>
-                    <tr>
-                        <td>Blog Corporativo Otimizado</td>
-                        <td>Layout sob medida, integração com SEO e área administrativa personalizada</td>
-                        <td class="valor">R$ 1.800 – R$ 2.800</td>
+                        <td>Blog Corporativo</td>
+                        <td>Layout sob medida, integração com SEO e área administrativa</td>
+                        <td class="valor">R$ 3.000</td>
                     </tr>
                     <tr>
                         <td>Venda de Ingressos Online</td>
-                        <td>Sistema de eventos e controle de lotes, QR Code e relatórios de vendas</td>
-                        <td class="valor">R$ 3.500 – R$ 6.000</td>
+                        <td>Sistema de eventos, controle de lotes, QR Code e relatórios</td>
+                        <td class="valor">R$ 3.000</td>
+                    </tr>
+                    <tr>
+                        <td>E-commerce Completo</td>
+                        <td>Loja virtual profissional (até 1000 produtos), gateways de pagamento</td>
+                        <td class="valor">R$ 5.000</td>
                     </tr>
                 </table>
             </div>
 
             <hr>
 
-            <!-- ====== 2️⃣ Chatbot Inteligente ====== -->
+            <!-- ====== 2️⃣ INVESTIMENTO INICIAL: CHATBOT ====== -->
             <div class="tabela-servico">
-                <h3>2️⃣ Chatbot Inteligente</h3>
-                <p>Atendimento automatizado com inteligência artificial, disponível 24h/dia.</p>
+                <h3>2️⃣ Investimento Inicial: Chatbot Inteligente</h3>
+                <p>Setup e integração do chatbot. Cobrado uma única vez no início. Mensalidade é separada (veja próxima seção).</p>
                 <table>
                     <tr>
                         <th>Plano</th>
                         <th>Recursos</th>
-                        <th>Valor Justo (R$)</th>
+                        <th>Preço (R$)</th>
                     </tr>
                     <tr>
                         <td>Essencial</td>
-                        <td>Chatbot para dúvidas frequentes + integração básica no WhatsApp</td>
-                        <td class="valor">R$ 1.200 – R$ 1.800</td>
+                        <td>Chatbot para FAQs + integração básica WhatsApp</td>
+                        <td class="valor">R$ 800</td>
                     </tr>
                     <tr>
                         <td>Profissional</td>
-                        <td>Fluxos personalizados, captação de leads e integração com CRM</td>
-                        <td class="valor">R$ 2.000 – R$ 3.500</td>
+                        <td>Fluxos personalizados, captação de leads, integração com CRM</td>
+                        <td class="valor">R$ 1.500</td>
                     </tr>
                     <tr>
-                        <td>Enterprise (IA Avançada)</td>
-                        <td>Chatbot com IA (como GPT integrado), automações completas e suporte premium</td>
-                        <td class="valor">R$ 5.000 – R$ 8.000</td>
-                    </tr>
-                </table>
-            </div>
-
-            <hr>
-
-            <!-- ====== 3️⃣ Personalização Sazonal ====== -->
-            <div class="tabela-servico">
-                <h3>3️⃣ Personalização Sazonal</h3>
-                <p>Transforme seu site em campanhas temáticas (Natal, Black Friday, etc.).</p>
-                <table>
-                    <tr>
-                        <th>Tipo de Personalização</th>
-                        <th>Descrição</th>
-                        <th>Valor Justo (R$)</th>
-                    </tr>
-                    <tr>
-                        <td>Básica</td>
-                        <td>Troca de cores, banners e textos</td>
-                        <td class="valor">R$ 400 – R$ 600</td>
-                    </tr>
-                    <tr>
-                        <td>Intermediária</td>
-                        <td>Atualização de layout + copywriting otimizado</td>
-                        <td class="valor">R$ 800 – R$ 1.200</td>
-                    </tr>
-                    <tr>
-                        <td>Campanha Completa</td>
-                        <td>Design temático completo, banners animados, landing page e automação de campanha</td>
-                        <td class="valor">R$ 1.800 – R$ 3.000</td>
+                        <td>Enterprise</td>
+                        <td>IA Avançada (GPT integrado), automações completas, suporte 24h</td>
+                        <td class="valor">R$ 3.000</td>
                     </tr>
                 </table>
             </div>
 
             <hr>
 
-            <!-- ====== 4️⃣ Manutenção e Suporte Técnico ====== -->
+            <!-- ====== 3️⃣ MENSALIDADES ====== -->
             <div class="tabela-servico">
-                <h3>4️⃣ Manutenção e Suporte Técnico</h3>
-                <p>Garantia de desempenho e segurança contínua para seu site.</p>
+                <h3>3️⃣ Mensalidades (Cobrado Todo Mês)</h3>
+                <p>Escolha os componentes que o cliente contratará mensalmente. Todos os valores são cumulativos.</p>
                 <table>
                     <tr>
-                        <th>Plano</th>
-                        <th>Frequência</th>
+                        <th>Componente</th>
                         <th>Inclui</th>
-                        <th>Valor Mensal (R$)</th>
+                        <th>Valor/Mês (R$)</th>
                     </tr>
                     <tr>
-                        <td>Básico</td>
-                        <td>1x/mês</td>
-                        <td>Atualizações de segurança e pequenos ajustes</td>
-                        <td class="valor">R$ 250 – R$ 400/mês</td>
+                        <td>Hospedagem & Manutenção Base</td>
+                        <td>Servidor, SSL, atualizações de segurança, suporte técnico</td>
+                        <td class="valor">R$ 150</td>
                     </tr>
                     <tr>
-                        <td>Profissional</td>
-                        <td>2x/mês</td>
-                        <td>Revisões técnicas, otimização de SEO, suporte de conteúdo</td>
-                        <td class="valor">R$ 600 – R$ 900/mês</td>
+                        <td>Personalização Sazonal</td>
+                        <td>Direito a 6 campanhas temáticas/ano (Natal, Black Friday, etc.)</td>
+                        <td class="valor">R$ 200</td>
                     </tr>
                     <tr>
-                        <td>VIP</td>
-                        <td>Ilimitado</td>
-                        <td>Suporte prioritário, monitoramento 24h, relatórios mensais</td>
-                        <td class="valor">R$ 1.200 – R$ 2.000/mês</td>
+                        <td>Chatbot Essencial</td>
+                        <td>Manutenção, atualizações e suporte do chatbot</td>
+                        <td class="valor">R$ 150</td>
+                    </tr>
+                    <tr>
+                        <td>Chatbot Profissional</td>
+                        <td>Manutenção, atualizações, suporte e otimizações</td>
+                        <td class="valor">R$ 250</td>
+                    </tr>
+                    <tr>
+                        <td>Chatbot Enterprise</td>
+                        <td>Suporte prioritário 24h, relatórios avançados, otimizações contínuas</td>
+                        <td class="valor">R$ 400</td>
+                    </tr>
+                    <tr>
+                        <td>Suporte Técnico Prioritário</td>
+                        <td>Atendimento imediato, monitoramento contínuo, relatórios</td>
+                        <td class="valor">R$ 300</td>
+                    </tr>
+                    <tr>
+                        <td>SEO Avançada</td>
+                        <td>Análise de palavras-chave, link building, otimização técnica</td>
+                        <td class="valor">R$ 250</td>
+                    </tr>
+                    <tr>
+                        <td>Gestão de Conteúdo</td>
+                        <td>Criação e publicação mensal de conteúdo, copywriting</td>
+                        <td class="valor">R$ 400</td>
                     </tr>
                 </table>
+                <div class="nota">
+                    <strong>💡 Como funciona:</strong> Base é R$ 150. Cliente escolhe somar Personalização (+ R$ 200), Chatbot Profissional (+ R$ 250), Suporte Premium (+ R$ 300), etc. Todos os valores são adicionados.
+                </div>
             </div>
 
             <hr>
 
-            <!-- ====== 💼 Pacotes Combinados ====== -->
+            <!-- ====== 4️⃣ PACOTES RECOMENDADOS ====== -->
             <div class="tabela-servico">
-                <h3>💼 Pacotes Combinados (para aumentar ticket médio)</h3>
+                <h3>4️⃣ Pacotes Recomendados (Pronto para Vender)</h3>
+                <p>Combinações já montadas. Mostre esses para seus clientes com os valores totais.</p>
                 <table>
                     <tr>
                         <th>Pacote</th>
-                        <th>Inclui</th>
-                        <th>Valor Justo (R$)</th>
+                        <th>Entrada (Uma Vez)</th>
+                        <th>Mensal (Recorrente)</th>
+                        <th>Observação</th>
                     </tr>
                     <tr>
-                        <td>Presença Digital Completa</td>
-                        <td>Site Institucional + Chatbot Profissional + 3 meses de manutenção</td>
-                        <td class="valor">R$ 6.000 – R$ 8.500</td>
+                        <td><span class="destaque">Essential Site</span></td>
+                        <td class="valor">R$ 445</td>
+                        <td class="valor">R$ 150</td>
+                        <td>Landing Page básica + hospedagem</td>
                     </tr>
                     <tr>
-                        <td>Loja + Automação de Atendimento</td>
-                        <td>E-commerce completo + Chatbot IA + Campanha Sazonal</td>
-                        <td class="valor">R$ 9.000 – R$ 12.000</td>
+                        <td><span class="destaque">Presença Digital</span></td>
+                        <td class="valor">R$ 775</td>
+                        <td class="valor">R$ 350</td>
+                        <td>Site Institucional + Hospedagem + Personalização Sazonal</td>
                     </tr>
                     <tr>
-                        <td>Plano Premium Anual</td>
-                        <td>Site + Suporte VIP + 4 campanhas sazonais</td>
-                        <td class="valor">R$ 12.000 – R$ 18.000 (anual)</td>
+                        <td><span class="destaque">Presença Digital + Chat</span></td>
+                        <td class="valor">R$ 2.275</td>
+                        <td class="valor">R$ 600</td>
+                        <td>Site (R$ 775) + Chatbot Profissional (R$ 1.500)<br>+ Hospedagem + Personalização + Chatbot</td>
+                    </tr>
+                    <tr>
+                        <td><span class="destaque">Blog Profissional</span></td>
+                        <td class="valor">R$ 3.000</td>
+                        <td class="valor">R$ 550</td>
+                        <td>Blog + Hospedagem + Personalização + Suporte Premium</td>
+                    </tr>
+                    <tr>
+                        <td><span class="destaque">Blog + Chatbot</span></td>
+                        <td class="valor">R$ 4.500</td>
+                        <td class="valor">R$ 800</td>
+                        <td>Blog (R$ 3.000) + Chatbot Profissional (R$ 1.500)<br>+ Hospedagem + Chat + Personalização + Suporte</td>
+                    </tr>
+                    <tr>
+                        <td><span class="destaque">Loja Online</span></td>
+                        <td class="valor">R$ 5.000</td>
+                        <td class="valor">R$ 350</td>
+                        <td>E-commerce + Hospedagem + Personalização</td>
+                    </tr>
+                    <tr>
+                        <td><span class="destaque">Loja Inteligente</span></td>
+                        <td class="valor">R$ 8.000</td>
+                        <td class="valor">R$ 800</td>
+                        <td>E-commerce (R$ 5.000) + Chatbot Enterprise (R$ 3.000)<br>+ Hospedagem + Chat + Personalização</td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr>
+
+            <!-- ====== 📊 RESUMO & ROI ====== -->
+            <div class="tabela-servico">
+                <h3>📊 Resumo & Análise de ROI</h3>
+                <table>
+                    <tr>
+                        <th>Métrica</th>
+                        <th>Detalhamento</th>
+                    </tr>
+                    <tr>
+                        <td><span class="destaque">Entrada Mais Baixa</span></td>
+                        <td>R$ 335,75 (Cartão Digital) - Ótimo para prospecção</td>
+                    </tr>
+                    <tr>
+                        <td><span class="destaque">Entrada Mais Comum</span></td>
+                        <td>R$ 775 (Site Institucional) ou R$ 2.275 (Site + Chatbot)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="destaque">Mensalidade Mínima</span></td>
+                        <td>R$ 150/mês (apenas hospedagem)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="destaque">Mensalidade Média</span></td>
+                        <td>R$ 400-600/mês (hospedagem + personalização + chat)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="destaque">Mensalidade Premium</span></td>
+                        <td>R$ 800-1.000/mês (com suporte prioritário, SEO, gestão)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="destaque">ROI - Pacote Presença Digital + Chat</span></td>
+                        <td>Entrada: R$ 2.275 | Mensal: R$ 600<br>Recupera investimento em <strong>3,8 meses</strong></td>
+                    </tr>
+                    <tr>
+                        <td><span class="destaque">ROI - Loja Inteligente</span></td>
+                        <td>Entrada: R$ 8.000 | Mensal: R$ 800<br>Recupera investimento em <strong>10 meses</strong></td>
+                    </tr>
+                    <tr>
+                        <td><span class="destaque">Receita Anual (1 Cliente Médio)</span></td>
+                        <td>Entrada: R$ 2.275 | Recorrência: R$ 600 x 12 = R$ 7.200<br><strong>Total Ano 1: R$ 9.475</strong></td>
                     </tr>
                 </table>
             </div>
